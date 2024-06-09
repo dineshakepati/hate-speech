@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #b88ceb;
+            padding: 20px;
+        }
+        h1 {
+            color: #343a40;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .result-container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+        .result-item {
+            margin-bottom: 10px;
+        }
+        .back-button {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #007bff;
+            transition: color 0.3s ease;
+        }
+        .back-button:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h1>Result</h1>
+        <div class="result-item">
+            {{ result }}
+        </div>
+        <!-- Back Button -->
+        <a href="/" class="back-button"><i class="fas fa-arrow-left"></i> Back</a>
+    </div>
+    <!-- Font Awesome JS (optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+</html>
